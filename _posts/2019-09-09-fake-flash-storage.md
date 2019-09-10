@@ -1,9 +1,10 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2018-05-29 18:05:55 +0300
-image:  10.jpg
-tags:   Jekyll
+title:  "Detect fake flash size"
+date:   2019-09-10 11:39:55 +0100
+image:  digital-storage-media-1443484_1920.jpg
+image_footer: Image by <a href="https://pixabay.com/users/PhotoMIX-Company-1546875/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1443484">Photo Mix</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1443484">Pixabay</a>
+tags: Fake sd flash pendrive usb size
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 

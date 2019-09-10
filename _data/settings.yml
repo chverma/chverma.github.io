@@ -1,9 +1,17 @@
 #-------------------------------
 # General Site Settings
 title: Chverma
-logo: logo.svg # You can add own logo.
+logo: logo.png # You can add own logo.
 description: A website to publish my own content
 
+#-------------------------------
+# Collections
+collections:
+  staff_members:
+    output: true
+    permalink: /:collection/:name
+
+# collections_dir: collections
 
 #-------------------------------
 # Author Settings
