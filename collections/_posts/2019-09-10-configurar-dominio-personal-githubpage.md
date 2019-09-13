@@ -5,6 +5,11 @@ date:   2019-09-10 10:39:55 +0100
 image:  github-394322_1280.png
 image_footer: Image by <a href="https://pixabay.com/users/OpenClipart-Vectors-30363/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=394322">OpenClipart-Vectors</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=394322">Pixabay</a>
 tags:   GitHub Page Custom Domain Howto
+lang: es
+ref: custom-domain-github
+pagination:
+  enabled: true
+  category: ca
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 

@@ -7,9 +7,9 @@
         <div class="logo">
           <a class="logo__link" href="{{site.baseurl}}/">
           {%if site.data.settings.logo %}
-            <img class="logo__image" src="{{ site.baseurl }}/images/{{ site.data.settings.logo }}" alt="{{ site.data.settings.title }}">
+            <img class="logo__image" src="{{ site.baseurl }}/images/{{ site.data.settings.logo }}" alt="{{ site.data.settings.title[page.lang] }}">
           {% else %}
-            {{ site.data.settings.title }}
+            {{ site.data.settings.title[page.lang] }}
           {% endif %}
           </a>
         </div>
@@ -25,13 +25,18 @@
 
             <ul class="nav__list list-reset">
               <li class="nav__item">
+                {% if page.lang == 'en' %}
                 <a href="{{site.baseurl}}/" class="nav__link">Home</a>
+                {% else %}
+                <a href="{{site.baseurl}}/index-{{page.lang}}" class="nav__link">Portada</a>
+                {% endif%}
               </li>
-              {% for page in site.pages %}
-                {% unless page.name == 'tags.html' or page.name == '404.html' %}
-              {% if page.title %}
+              {% assign pages=site.pages | where:"lang", page.lang %}
+              {% for epage in pages %}
+                {% unless epage.name == 'tags.html' or epage.name == '404.html' %}
+              {% if epage.title %}
               <li class="nav__item">
-                <a href="{{ page.url | prepend: site.baseurl }}" class="nav__link">{{ page.title }}</a>
+                <a href="{{ epage.url | prepend: site.baseurl }}" class="nav__link">{{ epage.title }}</a>
               </li>
               {% endif %}
                 {% endunless %}
@@ -47,6 +52,14 @@
         </div>
 
         <div class="header__overlay"></div>
+
+<div class="wrapper" style="text-align: right; line-height: 2em">
+  {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
+  {% for post in posts %} <a href="{{ post.url | prepend: site.baseurl }}" class="{{ post.lang }}">{{ post.lang }}</a> {% endfor %}
+
+  {% assign pages=site.pages | where: "ref", page.ref | sort: 'lang' %}
+  {% for page in pages %} <a href="{{ page.url | prepend: site.baseurl }}" class="{{ page.lang }}">{{ page.lang }}</a> {% endfor %}
+</div>
       </header>
       <!-- end header -->
     </div>

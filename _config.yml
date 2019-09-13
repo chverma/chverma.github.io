@@ -6,12 +6,19 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 markdown: kramdown
 permalink: pretty
 plugins:
-  - jekyll-paginate
+  - jekyll-paginate-v2
   - jekyll-sitemap
   - jekyll/tagging
 
-paginate: 5
-paginate_path: "/page/:num"
+# Pagination Settings
+pagination:
+  enabled: true
+  per_page: 2
+  permalink: '/page/:num/'
+  title: ' - page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
 
 
 # Pages Path
@@ -33,3 +40,11 @@ tag_permalink_style:  pretty
 sass:
   sass_dir: _sass
   style: compressed
+
+#-------------------------------
+# Collections
+collections:
+  staff_members:
+    people: true
+
+collections_dir: collections
