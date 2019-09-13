@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Education
-permalink: /education/
+title: Educació
+permalink: /educacio/
 ref: education
-lang: en
+lang: ca
 ---
 <div class="container">
 	<div class="row">

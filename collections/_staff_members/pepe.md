@@ -1,4 +1,0 @@
----
-position: algo
-name: pepe
----

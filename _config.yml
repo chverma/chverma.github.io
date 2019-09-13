@@ -44,7 +44,7 @@ sass:
 #-------------------------------
 # Collections
 collections:
-  staff_members:
-    people: true
+  education_levels_entries:
+    output: true
 
 collections_dir: collections
