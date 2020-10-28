@@ -1,32 +1,19 @@
 #-------------------------------
 # General Site Settings
-title:
-  en: Share 4 teach
-  es: Compartir para enseñar
-  ca: Compartir per a ensenyar
+title: Apuntes libres
 
 logo: logo.png # You can add own logo.
-description: A website to publish my own content
+description: Una página web para publicar apuntes libres de informática aka Ciencias de la Computación
 
 #-------------------------------
 # Author Settings
 author:
   name: Christian V.
   image: 01.jpg
-  say-hello:
-    en: Hello, I’m <strong>Christian V.</strong>
-    es: Hola, soy <strong>Christian V.</strong>
-    ca: Hola, sóc <strong>Christian V.</strong>
-  bio:
-    en: Writes about <strong>web</strong>, <strong>ethics</strong>, <strong>privacy</strong>, and dev. I share tutorials, free resources, education resources. Loves <a href="#">music</a> & riding his bike.
-    es: Escribe sobre <strong>web</strong>, <strong>ética</strong>, <strong>privacidad</strong> y desarrollo de aplicaciones. Comparto tutoriales, recursos gratuitos, recursos educativos. Ama la <a href="#"> música </a> y monta su bicicleta.
-    ca: Escriu sobre <strong>web</strong>, <strong>ètica</strong>, <strong>privadesa</strong> i desenvolupament d'aplicacions. Compartisc tutorials, recursos gratuïts, recursos educatius. Li encanta <a href="#"> la música </a> i anar amb la bicicleta.
+  say-hello: Hola, soy <strong>Christian V.</strong>
+  bio: Escribe sobre <strong>web</strong>, <strong>ética</strong>, <strong>privacidad</strong> y desarrollo de aplicaciones. Comparto tutoriales, recursos gratuitos, recursos educativos. Ama la <a href="#"> música </a> y monta su bicicleta.
 
-follow:
-  en: Follow Me
-  es: Sígueme
-  ca: Segueix-me
-
+follow: Sígueme
 
 #-------------------------------
 # Contact links

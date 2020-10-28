@@ -1,6 +1,5 @@
 ---
 layout: default
-lang: en
 ref: index
 ---
 {% include hero.html %}
@@ -14,15 +13,3 @@ ref: index
 		</div>
 	</div>
 </div>
-
-<div class="container">
-	<div class="row">
-  {% assign posts=site.posts | where:"lang", page.lang %}
-  {% if posts.size > 0 %}
-    {% for post in posts %}
-			{% include article-content.html %}
-		{% endfor %}
-	{% endif %}
-	</div>
-</div>
-{% include pagination.html %}
